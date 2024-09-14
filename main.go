@@ -12,5 +12,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)
 	fmt.Println("Starting the server on :3000")
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe("localhost:3000", nil)
 }
